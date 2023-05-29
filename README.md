@@ -6,4 +6,9 @@ Asset Stats are a way to expose information for assets, closing the value loop.
 
 ## Documentation
 
-- [Protocol and DAO Confluence Space](https://alteredstatemachine.atlassian.net/wiki/spaces/PAD/overview)
+- [Project Overview](./audit/overview.md)
+- [Compute Request Manager Flow](./audit/crm_flow.md)
+- [Compute Request Manager Administration](./audit/crm_admin.md)
+- [Memory Tree Interface Defintions](./audit/mt_spec.md)
+- [Asset Stats Interface Defintions](./audit/as_spec.md)
+- [Asset Stats Registry Interface Defintions](./audit/asr_spec.md)
