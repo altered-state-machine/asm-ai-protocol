@@ -1,0 +1,24 @@
+[profile.default]
+eth-rpc-url = "https://rpc.ankr.com/eth_goerli" 
+libs = ["lib"] 
+out = "out" 
+remappings = [
+  'forge-std/=lib/forge-std/src/',
+  'ds-test/=lib/forge-std/lib/ds-test/src/',
+  'hardhat/=node_modules/hardhat/',
+  '@openzeppelin/=node_modules/@openzeppelin/',
+  'erc721a/=lib/erc721a/',
+  '@uniswap/=node_modules/@uniswap/',
+] 
+solc = "0.8.17" # to use a specific local solc install set the path as `solc = "<path to solc>/solc"`
+src = "tests/" 
+
+## set only when the `hardhat` profile is selected
+[profile.hardhat]
+libs = ["node_modules"]
+out = "artifacts"
+src = "contracts"
+
+## set only when the `spells` profile is selected
+[profile.spells]
+## --snip-- more settings
