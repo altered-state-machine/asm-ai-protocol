@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Core Protocol Example</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/web3modal@1.9.0/dist/index.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="connect-section" class="full-page">
+        <button id="connect-btn">Connect</button>
+    </div>
+    <main id="main" class="gone">
+        <h1>Core Protocol Example</h1>
+        <p>You connected with <code id="addr"></code></p>
+        <div>
+            <h2>ASTO</h2>
+            <p>You own <code id="asto"></code> ASTO</p>
+            <p>You approved the Protocol to access <input id="approved" type="number"> ASTO <button id="allowance-btn">Update</button></p>
+        </div>
+        <div>
+            <h2>Brains</h2>
+            <p>You own:</p>
+            <div id="brains"></div>
+        </div>
+        <div>
+            <h2>Compute</h2>
+            <p>Select brain <select id="brain-select"></select></p>
+            <p>Select memory
+                <select id="memory-select">
+                    <option value="">Root</option>
+                </select>
+            </p>
+            <p><small><i>You can only train "pinned" nodes. You must select matching brain and memory (the demo doesn't validate this)</i></small></p>
+            <p>Compute units <input id="units" type="number"></p>
+        </div>
+        <button id="train-btn">Train</button>
+    </main>
+
+</body>
+
+</html>

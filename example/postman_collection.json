@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "8947be6c-7050-41f7-8a4e-bfead52f52d5",
+		"name": "Game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24425472"
+	},
+	"item": [
+		{
+			"name": "Get asset data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{game-url}}/asset/{{brain-addr}}/{{brain-id}}",
+					"host": [
+						"{{game-url}}"
+					],
+					"path": [
+						"asset",
+						"{{brain-addr}}",
+						"{{brain-id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request training hash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"addr\": \"{{brain-addr}}\",\r\n    \"id\": {{brain-id}},\r\n    \"params\": {\r\n        \"performance\": \"high\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{game-url}}/training",
+					"host": [
+						"{{game-url}}"
+					],
+					"path": [
+						"training"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
