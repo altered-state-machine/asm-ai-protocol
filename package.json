@@ -39,7 +39,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts": "^4.9.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "erc721a": "^4.2.3"
   },
